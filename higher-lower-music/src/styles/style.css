@@ -6,6 +6,10 @@
   font-family: "Open Sans", sans-serif;
 }
 
+main {
+  background-color: #111111;
+}
+
 .fields {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -21,7 +25,6 @@
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  background-color: red;
   width: 100%;
   height: 100%;
 }
@@ -31,13 +34,13 @@
   font-weight: 700;
   font-size: xx-large;
   float: left;
+  color: white;
 }
 
 .fields .right {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  background-color: blue;
 }
 
 .fields .right .highscore {
@@ -45,31 +48,93 @@
   font-weight: 700;
   font-size: xx-large;
   float: right;
+  color: white;
 }
 
 .fields .separator {
   -webkit-box-flex: 0.005;
       -ms-flex: 0.005;
           flex: 0.005;
-  background-color: black;
+  background-color: #ffffff;
 }
 
 .vs {
   background-color: white;
   border-radius: 100%;
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   position: fixed;
   top: 50%;
   left: 50%;
-  margin-top: -50px;
-  margin-left: -50px;
+  margin-top: -35px;
+  margin-left: -35px;
   text-align: center;
   vertical-align: middle;
-  line-height: 100px;
+  line-height: 70px;
 }
 
 .vs span {
+  font-size: x-large;
+}
+
+.interaction {
+  /* Can be in percentage also. */
+  height: auto;
+  margin: 0 auto;
+  width: 33%;
+  margin-left: 7vw;
+  top: 75%;
+  position: fixed;
+}
+
+.interaction span {
   font-size: xx-large;
+  color: white;
+}
+
+.interaction p {
+  font-size: xx-large;
+  color: white;
+}
+
+.interaction button {
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 10%;
+  padding: 15px;
+  font-size: xx-large;
+  margin: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.interaction .higher {
+  background-color: lime;
+}
+
+.interaction .lower {
+  background-color: red;
+}
+
+.leftvideo {
+  height: 52.5%;
+}
+
+.leftvideo iframe {
+  margin-top: 100px;
+  width: 90%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.rightvideo {
+  height: 52.5%;
+}
+
+.rightvideo iframe {
+  margin-top: 100px;
+  width: 90%;
+  height: 100%;
+  border-radius: 20px;
 }
 /*# sourceMappingURL=style.css.map */
